@@ -10,8 +10,8 @@ const Screens = (props) => {
   return (
     <>
       <Routes>
-        <Route index element={<HomePage langChange={props.languageChange} language={props.language}/>} />
-        <Route path="/home" element={<HomePage langChange={props.languageChange} language={props.language}/>} />
+        <Route index element={<HomePage  language={props.language}/>} />
+        <Route path="/home" element={<HomePage  language={props.language}/>} />
         <Route path="/about" element={<About language={props.language}/>} />
         <Route path="/projects" element={<Projects language={props.language} />} />
         <Route path="/contact" element={<Contact language={props.language}/>} />

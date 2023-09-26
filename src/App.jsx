@@ -6,23 +6,22 @@ import { supportedLang } from "./languages/lang";
 const App = () => {
   // console.log(navigator.languages);
   const [language, setLanguage] = useState("en");
-  const [originalLang, setOriginalLang] = useState("en");
+  
 
-  const languageChange = () => {
+  useEffect(() => {
     supportedLang.forEach((lang) => {
-      if (navigator.languages.includes(lang)) {
-        setLanguage(lang);
-        setOriginalLang(lang);
-        // console.log(lang);
-      }
-    });
-  };
+          if (navigator.languages.includes(lang)) {
+            setLanguage(lang);
+            
+          }
+        });
+  }, [])
 
   return (
     <>
       <h2>My portfolio-website</h2>
-      <Header langChange={languageChange} language={language} />
-      <Screens langChange={languageChange} language={language} />
+      <Header setLanguage={setLanguage} language={language} />
+      <Screens  language={language} />
     </>
   );
 };

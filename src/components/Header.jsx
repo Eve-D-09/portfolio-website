@@ -7,8 +7,8 @@ const Header = (props) => {
   return (
     <>
       <h1>Eve D.</h1>
-      <Languages langChange={props.languageChange} language={props.language} />
-      <Navigation langChange={props.languageChange} language={props.language} />
+      <Languages setLanguage={props.setLanguage} language={props.language} />
+      <Navigation language={props.language} />
     </>
   );
 };
