@@ -33,6 +33,7 @@ export const prod = {
         FORM_LABEL_EMAIL: "Email",
         FORM_LABEL_MESSAGE: "Message",
         FORM_BUTTON_SEND: "Send",
+        FOOTER_P: "Created with Love",
     },
     fr: {
         HOME: "Accueil",
@@ -66,7 +67,7 @@ export const prod = {
         FORM_LABEL_EMAIL: "Votre e-mail",
         FORM_LABEL_MESSAGE: "Message",
         FORM_BUTTON_SEND: "Envoyer",
-
+        FOOTER_P: "Créé avec l'amour",
     },
 }
 

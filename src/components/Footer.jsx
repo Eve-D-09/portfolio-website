@@ -1,11 +1,13 @@
 import React from "react";
+import { prod } from "../languages/lang.js";
 
-const Footer = () => {
+const Footer = (props) => {
   const year = new Date().getFullYear();
   return (
     <>
       <div>
-        <p>Created with Love Eve, Copyright&copy; {year}</p>
+        <p>{prod[props.language].FOOTER_P}</p>
+        <p> Eve, Copyright&copy; {year}</p>
       </div>
     </>
   );
