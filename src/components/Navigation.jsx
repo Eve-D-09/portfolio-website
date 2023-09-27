@@ -20,3 +20,8 @@ const Navigation = (props) => {
 };
 
 export default Navigation;
+
+
+// https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
+//  react page transitions: https://www.youtube.com/watch?v=8voRA_DMuFM
+// React Page Transitions With Framer Motion + React Router v6 (2023)

@@ -1,0 +1,9 @@
+.header {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    
+}
+
