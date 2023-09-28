@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import   ArrowDown  from "../img/svg/chevron-down-svgrepo-com.svg";
 import { prod } from "../languages/lang.js";
 import { motion } from "framer-motion";
 
 const About = (props) => {
+  const navigate = useNavigate();
   // const { language } = props;
   return (
     <motion.div
@@ -20,6 +23,9 @@ const About = (props) => {
       <div>
         <p>{prod[props.language].ABOUT_TEXT}</p>
       </div>
+      <div className="furtherLink">
+           <button onClick={() => navigate("/projects")}><img src={ArrowDown} alt="arrow-down" /></button> 
+        </div>
     </motion.div>
   );
 };

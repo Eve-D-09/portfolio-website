@@ -1,9 +1,83 @@
-.header {
+.headerContainer {
     position: relative;
     z-index: 20;
     display: flex;
     width: 100vw;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    /* background-color: black; */
+    height: auto;
 }
 
+.secondBox {
+    display: flex;
+}
+
+.headerContainer h1 {
+    color: white;
+}
+
+
+.selectContainer {
+    height: auto;
+}
+
+.selectContainer select {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: #5BA3E4;
+}
+
+/*  no way to overcome option tag?  */
+.navigation {
+    margin: 0 auto;
+    display: flex;
+}
+
+.navigation button {
+    background: transparent;
+    border: none;
+    cursor: grab;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    /* height: 80%; */
+    border: 1px solid rgb(230, 82, 45);
+}
+
+.navigation li {
+    list-style-type: none;
+    /* text-decoration: none; */
+    padding: 15px;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navigation nav {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    height: 300px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > button {
+    width: 90%;
+    margin: 0 auto;
+    padding: 7px 0;
+    cursor:grab;
+}

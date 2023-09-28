@@ -5,7 +5,7 @@ const Languages = (props) => {
   console.log(props.language);
 
   return (
-    <>
+    <div className="selectContainer">
       <select
         onChange={(e) => {
           props.setLanguage(e.target.value);
@@ -19,7 +19,7 @@ const Languages = (props) => {
           );
         })}
       </select>
-    </>
+    </div>
   );
 };
 

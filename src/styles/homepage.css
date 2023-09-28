@@ -22,3 +22,9 @@
     padding: 10px 20px;
     overflow: hidden;
 }
+
+.furtherLink button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
