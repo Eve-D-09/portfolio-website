@@ -12,17 +12,19 @@ const Navigation = (props) => {
   
   return (
     <div className="navigation">
-      <div>
+      <div >
         <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
       </div>
       { isOpen  && (
         <nav >
-        <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
+          <div className="closeNav">
+             <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
+          </div>
         <ul >
-          <li><Link to={"/"} className="navLinks" onClick={closeMenu}>{prod[language].HOME}</Link></li>
-          <li><Link to={"/about"} className="navLinks" onClick={closeMenu}> {prod[language].ABOUT} </Link></li>
-          <li><Link to={"/projects"} className="navLinks" onClick={closeMenu}> {prod[language].PROJECTS} </Link></li>
-          <li><Link to={"/contact"} className="navLinks" onClick={closeMenu}>{prod[language].CONTACT} </Link></li>
+          <Link to={"/"} className="navLinks" onClick={closeMenu}><li>{prod[language].HOME}</li></Link>
+          <Link to={"/about"} className="navLinks" onClick={closeMenu}><li>{prod[language].ABOUT} </li>  </Link>
+          <Link to={"/projects"} className="navLinks" onClick={closeMenu}><li>{prod[language].PROJECTS} </li> </Link>
+          <Link to={"/contact"} className="navLinks" onClick={closeMenu}><li>{prod[language].CONTACT} </li></Link>
         </ul>
       </nav>
       )}

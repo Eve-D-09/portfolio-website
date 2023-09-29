@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 import   ArrowDown  from "../img/svg/chevron-down-svgrepo-com.svg";
 import { prod } from "../languages/lang.js";
 import { motion } from "framer-motion";
+import Music from "../img/svg/headphones-svgrepo-com.svg";
+import Rover from "../img/svg/mars-curiosity-svgrepo-com.svg";
+import Minion from "../img/svg/minion.svg";
+import Mars from "../img/svg/mars-satellite.svg";
+
 
 const About = (props) => {
   const navigate = useNavigate();
@@ -17,11 +22,23 @@ const About = (props) => {
       exit={{ opacity: 1 }}
       className="aboutContainer"
     >
-      <div>
+      <div className="aboutBox">
         <h2>{prod[props.language].ABOUT_H2}</h2>
       </div>
-      <div>
-        <p>{prod[props.language].ABOUT_TEXT}</p>
+      <div className="aboutBox">
+        <p>{prod[props.language].ABOUT_TEXT_P1}</p>
+      </div>
+      <div className="aboutBox">
+        <p>{prod[props.language].ABOUT_TEXT_P2}</p>
+      </div>
+      <div className="aboutBox">
+        <img src={Minion} alt="minion" />
+        <img src={Music} alt="minion" />
+        <img src={Mars} alt="minion" />
+        <img src={Rover} alt="minion" />
+      </div>
+      <div className="aboutBox">
+        <p>{prod[props.language].ABOUT_TEXT_P3}</p>
       </div>
       <div className="furtherLink">
            <button onClick={() => navigate("/projects")}><img src={ArrowDown} alt="arrow-down" /></button> 

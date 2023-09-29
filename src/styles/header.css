@@ -4,16 +4,25 @@
     display: flex;
     width: 100vw;
     justify-content: space-between;
-    /* background-color: black; */
+    align-items: center;
+    /* background-color: var(--orange-red); */
+    background-color: black;
     height: auto;
+    /* box-shadow: 0px 5px 4px 0px rgba(230,82,45,0.76); */
+    box-shadow: 0px 5px 4px 0px rgba(36, 34, 33, 0.726);
+    padding: 10px;
 }
+
+/* https://html-css-js.com/css/generator/box-shadow/ */
 
 .secondBox {
     display: flex;
+    align-items: center;
 }
 
 .headerContainer h1 {
     color: white;
+    margin: 0;
 }
 
 
@@ -28,10 +37,16 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     padding: 5px 10px;
-    color: #5BA3E4;
+    color: var(--orange-red);
+    cursor: grab;
 }
 
 /*  no way to overcome option tag?  */
+option {
+    background-color: black;
+}
+
+
 .navigation {
     margin: 0 auto;
     display: flex;
@@ -55,12 +70,17 @@ nav ul {
     list-style-type: none;
     /* text-decoration: none; */
     padding: 15px;
+    width: 100%;
 }
+
+
 
 .navLinks {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    width: 100%;
+    cursor: grab;
 }
 
 .navigation nav {
@@ -75,9 +95,16 @@ nav ul {
     flex-direction: column;
 }
 
-nav > button {
+.closeNav {
     width: 90%;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.closeNav > button {
+    width: 100%;
     margin: 0 auto;
     padding: 7px 0;
     cursor:grab;
+    align-self: flex-end;
 }

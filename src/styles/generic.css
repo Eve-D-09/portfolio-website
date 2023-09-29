@@ -21,9 +21,12 @@ picture {
     display: block;
 }
 
-/* :root {
-    --some-color: #2660a4;
-} */
+:root {
+    --blue-color: #3584c9;
+    --orange-red: rgb(230, 82, 45);
+    --border-radius: 5px;
+    --small-padding: 7px 10px;
+}
 
 /* @font-face {
     font-family: "Lost-Ages-Regular";

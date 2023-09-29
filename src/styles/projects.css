@@ -2,19 +2,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(197, 250, 234);
+    background-color: rgb(253, 241, 230);
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    border: 2px solid black;
+    padding-bottom: 20px;
+    padding-top: 70px;
 }
 
+.projectsContainer h2 {
+    font-size: 1.5rem;
+}
 
 .projectItem p {
     margin: 0;
     padding: 5px 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }

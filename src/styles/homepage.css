@@ -2,29 +2,124 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(250, 197, 197);
+    background: rgb(237,93,38);
+    background: linear-gradient(180deg, rgb(211, 63, 4) 0%, rgba(254,254,254,1) 100%);
+    margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    padding-bottom: 20px;
+    padding-top: 70px;
+    /*  between div check the gap?  */
+    gap: 20px;
+
+    
+   
 }
 
-.homeContainer div {
-    height: 50px;
+.personalPhoto {
+    width: 300px;
+    height: 300px;
+}
+.personalPhoto img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.firstHomeBox {
+    color: black;
 }
 
 /*  maybe this will work when it will be some padding or margin */
-.firstParagraph {
+.homeParagraph {
     margin: 0;
     padding: 10px 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    width: 100%;
 }
 
+.homeParagraph p {
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    opacity: unset;
+}
+
+.homeParagraph a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 7px 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    border: 2px solid #fcfdff;
+    border-radius: var(--border-radius);
+}
+
+.firstHomeBox {
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    width: 90%;
+}
+.profession {
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+
+.profession p {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.skillsListing {
+    width: 90%;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 5px 0;
+}
+
+.skillsListing p {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+    padding: 7px 10px;
+    /* overflow: hidden; */
+    
+}
+.skillsListing div {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    padding: 7px 10px;
+}
+.skillsListing button {
+    width: auto;
+    background: none;
+    font-size: 0.8rem;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: var(--border-radius);
+    padding: 7px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*  think again about button - maybe remove border?  */
 .furtherLink button {
     background: none;
-    border: none;
+    border: 2px solid rgb(237,93,38);
     cursor: pointer;
+    border-radius: var(--border-radius);
 }
