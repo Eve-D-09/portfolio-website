@@ -14,17 +14,14 @@
     align-items: center;
     padding-bottom: 20px;
     padding-top: 70px;
-    /*  between div check the gap?  */
     gap: 20px;
-
-    
-   
 }
 
 .personalPhoto {
     width: 300px;
     height: 300px;
 }
+
 .personalPhoto img {
     width: 300px;
     height: 300px;
@@ -40,7 +37,7 @@
 .homeParagraph {
     margin: 0;
     padding: 10px 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
 }
 
@@ -62,8 +59,8 @@
 }
 
 .firstHomeBox {
-    border-top: 5px solid black;
-    border-left: 5px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     width: 90%;
 }
 .profession {
@@ -95,8 +92,7 @@
     text-align: right;
     font-size: 0.8rem;
     padding: 7px 10px;
-    /* overflow: hidden; */
-    
+    overflow: hidden;
 }
 .skillsListing div {
     width: 100%;

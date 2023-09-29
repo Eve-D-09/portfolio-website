@@ -37,13 +37,17 @@ const Projects = (props) => {
           }}>{prod[props.language].PROJECTS_H2}</h2>
         </div>
         <div className="projectItem">
-          <p>Mars Messengers - made with NASA API</p>
-          <img src={MarsProject} alt="project-screenshot" />
+          <div className="projectIntro">
+            <h3>Mars Messengers</h3>
+            <p>First React, Redux-toolkit project made with NASA API</p>
+          </div>
+          <div className="projectImage">
+            <img src={MarsProject} alt="project-screenshot" />
+          </div>
           <div className="projectLinks">
             <a href="http://www.marsmessengers.co.uk">Demo</a>
             <a href="http://www.github.com">Source</a>
           </div>
-          
         </div>
         <div className="projectItem">
           <p >Music Preview API - made with Deezer</p>

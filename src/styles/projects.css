@@ -1,25 +1,57 @@
 .projectsContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(253, 241, 230);
-    width: 100%;
-    /* height: 100%; */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding-bottom: 20px;
-    padding-top: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 70px;
+  gap: 20px;
 }
 
 .projectsContainer h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.projectItem {
+  /* border: 2px solid black; */
+  border: 3px solid var(--orange-red);
+  border-radius: var(--border-radius);
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.projectIntro {
+  width: 100%;
+  background-color: var(--orange-red);
+  color: white;
+}
+
+.projectIntro h3 {
+  margin: 0;
+  padding: 5px 10px;
+}
+.projectLinks {
+  height: 35px;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--orange-red);
+  border-radius: var(--border-radius);
+  padding: 5px 10px;
 }
 
 .projectItem p {
-    margin: 0;
-    padding: 5px 10px;
-    /* overflow: hidden; */
+  margin: 0;
+  padding: 5px 10px;
+  /* overflow: hidden; */
 }

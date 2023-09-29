@@ -11,7 +11,7 @@ import Mars from "../img/svg/mars-satellite.svg";
 
 const About = (props) => {
   const navigate = useNavigate();
-  // const { language } = props;
+ 
   return (
     <motion.div
       // initial={{ opacity: 0 }}
@@ -20,8 +20,7 @@ const About = (props) => {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
-      className="aboutContainer"
-    >
+      className="aboutContainer">
       <div className="aboutBox">
         <h2>{prod[props.language].ABOUT_H2}</h2>
       </div>

@@ -5,13 +5,13 @@ import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 
 const Screens = (props) => {
   const location = useLocation();
   return (
     <>
-      <AnimatePresence>
+      {/* <AnimatePresence> */}
         <Routes key={location.pathname} location={location}>
           <Route index element={<HomePage language={props.language} />} />
           <Route path="/home"  element={<HomePage language={props.language} />} />
@@ -20,7 +20,7 @@ const Screens = (props) => {
           <Route path="/contact" element={<Contact language={props.language} />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </>
   );
 };
