@@ -7,6 +7,8 @@ const Footer = (props) => {
     <>
       <div>
         <p>{prod[props.language].FOOTER_P}</p>
+      </div>
+      <div className="footerSecondBox">
         <p> Eve, Copyright&copy; {year}</p>
       </div>
     </>

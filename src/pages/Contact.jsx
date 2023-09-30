@@ -36,17 +36,20 @@ const Contact = (props) => {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
-      className="contactContainer"
-    >
-      <div>
-        <h2>{prod[props.language].CONTACT_H2}</h2>
-      </div>
-      <div>
-        <Form onSubmit={onSubmit} setLanguage={props.setLanguage}  language={props.language} />
-      </div>
-      <div>
-        <SocialMedia />
-        <Footer setLanguage={props.setLanguage} language={props.language} />
+      className="contactContainer" >
+      <div className="contactWrapper">
+        <div>
+          <h2>{prod[props.language].CONTACT_H2}</h2>
+        </div>
+        <div className="formContainer">
+          <Form onSubmit={onSubmit} setLanguage={props.setLanguage}  language={props.language}/>
+        </div>
+        <div className="socialMediaContainer">
+           <SocialMedia />
+        </div>
+        <div className="footerContainer">
+          <Footer setLanguage={props.setLanguage} language={props.language} />
+        </div>
       </div>
     </motion.main>
   );

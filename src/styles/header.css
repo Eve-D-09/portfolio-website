@@ -2,10 +2,12 @@
     position: relative;
     z-index: 20;
     display: flex;
+    /*  bring back 100%?  */
     width: 100vw;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    /* background-color: rgb(4, 40, 94); */
     height: auto;
     /* box-shadow: 0px 5px 4px 0px rgba(230,82,45,0.76); */
     box-shadow: 0px 5px 4px 0px rgba(36, 34, 33, 0.726);
@@ -75,7 +77,7 @@ nav ul {
 
 .navLinks {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.2rem;
     width: 100%;
     cursor: grab;
@@ -88,7 +90,7 @@ nav ul {
     right: 0;
     width: 90vw;
     height: 300px;
-    background-color: lightblue;
+    background-color: rgb(8, 53, 104);
     display: flex;
     flex-direction: column;
 }

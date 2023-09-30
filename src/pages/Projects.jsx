@@ -28,7 +28,7 @@ const Projects = (props) => {
       exit={{ opacity: 1 }}
       className="projectsContainer"
     >
-      <motion.div variants={animateContainer} initial="hidden" animate="show">
+      <motion.div className="projectsWrapper" variants={animateContainer} initial="hidden" animate="show">
         <div ref={ref}>
           <h2 style={{ 
             transform: isInView ? "none" : "translateX(-200px)",
@@ -39,7 +39,7 @@ const Projects = (props) => {
         <div className="projectItem">
           <div className="projectIntro">
             <h3>Mars Messengers</h3>
-            <p>First React, Redux-toolkit project made with NASA API</p>
+            <p>First React, Redux-toolkit project made with NASA API. Search for rover's photos from Mars.</p>
           </div>
           <div className="projectImage">
             <img src={MarsProject} alt="project-screenshot" />
@@ -50,26 +50,41 @@ const Projects = (props) => {
           </div>
         </div>
         <div className="projectItem">
-          <p >Music Preview API - made with Deezer</p>
-          <img src={MusicProject} alt="project-screenshot" />
+          <div className="projectIntro">
+            <h3>Music Preview API</h3>
+            <p >First JS project - made with Deezer API. Search for any artist or band and get song preview.</p>
+          </div>
+          <div className="projectImage">
+            <img src={MusicProject} alt="project-screenshot" />
+          </div>
           <div className="projectLinks">
-            <a href="https://app.netlify.com/sites/keen-trifle-16df64/overview">Demo</a>
+            <a href="https://keen-trifle-16df64.netlify.app">Demo</a>
             <a href="http://www.github.com">Source</a>
           </div>
         </div>
         <div className="projectItem">
-          <p>Replica Project - Partytrick</p>
-          <img src={ReplicaProject} alt="project-screenshot" />
+          <div className="projectIntro">
+            <h3>Replica Project</h3>
+            <p>Landing copy-page of real website -  Partytrick. Made purely with HTML and CSS.</p>
+          </div>
+          <div className="projectImage">
+             <img src={ReplicaProject} alt="project-screenshot" />
+          </div>
           <div className="projectLinks">
-            <a href="">Demo</a>
+            <a href="https://aquamarine-kelpie-f1ee1f.netlify.app">Demo</a>
             <a href="http://www.github.com">Source</a>
           </div>
         </div>
         <div className="projectItem">
-          <p>Minion project - made with SVG</p>
-          <img src={MinionProject} alt="project-screenshot" />
+          <div className="projectIntro">
+            <h3>Minion small SVG project</h3>
+            <p>This small task was to design some image by playing with SVG forms.</p>
+          </div>
+         <div className="projectImage">
+           <img src={MinionProject} alt="project-screenshot" />
+         </div>
           <div className="projectLinks">
-            <a href="https://app.netlify.com/sites/eve-svg-hw-365e3a/overview">Demo</a>
+            <a href="https://eve-svg-hw-365e3a.netlify.app">Demo</a>
             <a href="http://www.github.com">Source</a>
           </div>
         </div>
