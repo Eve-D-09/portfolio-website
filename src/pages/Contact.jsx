@@ -38,8 +38,20 @@ const Contact = (props) => {
       exit={{ opacity: 1 }}
       className="contactContainer" >
       <div className="contactWrapper">
-        <div>
-          <h2>{prod[props.language].CONTACT_H2}</h2>
+        <div className="contactHeading">
+          <div className="headingFirst">
+             <h2>{prod[props.language].CONTACT_H2_LINE1}</h2>
+             <div></div>
+          </div>
+          <div className="headingSecond">
+             <div></div>
+             <h2>{prod[props.language].CONTACT_H2_LINE2}</h2>
+          </div>
+          <div className="headingThird">
+             <h2>{prod[props.language].CONTACT_H2_LINE3}</h2>
+             <div></div>
+          </div>
+          
         </div>
         <div className="formContainer">
           <Form onSubmit={onSubmit} setLanguage={props.setLanguage}  language={props.language}/>

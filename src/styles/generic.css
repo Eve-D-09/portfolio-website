@@ -4,12 +4,13 @@
 
 
 body {
-    font-family: sans-serif;
+    font-family: "Fragment", sans-serif;
     font-size: 100%;
     /*  this overflow causes problems! */
     /* overflow: hidden; */
     padding: 0;
     margin: 0;
+    line-height: 1.2rem;
 }
 
 img {
@@ -29,10 +30,86 @@ picture {
     --small-padding: 7px 10px;
 }
 
-/* @font-face {
-    font-family: "Lost-Ages-Regular";
-    src: url(./fonts/LostAgesPersonalUseRegular-Ea0nl.ttf);
-    font-weight: 300;
+
+
+
+ @font-face {
+    font-family: "Borela";
+    src: url(./fonts/borela/BORELA-BF6512c82e1ceb7.ttf);
     font-style: normal;
     font-display: swap;
-} */
+ }
+
+ @font-face {
+    font-family: "Zuma";
+    src: url(./fonts/zuma/Zuma-BF64f991db1dd35.otf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Annette";
+    src: url(./fonts/annette/Annette-BF64d4daca500c4.ttf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Bolda";
+    src: url(./fonts/bolda/BoldaSans-BF64ed6ea62761b.ttf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Cenios";
+    src: url(./fonts/cenios/Cenios-Regular-BF64e040d38b2f1.otf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+
+
+ @font-face {
+    font-family: "Pilcrow-regular";
+    src: url(./fonts/pilcrow/Pilcrow-Regular-BF64dd8808df29b.otf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+
+ @font-face {
+    font-family: "Pilcrow-semibold";
+    src: url(./fonts/pilcrow/Pilcrow-Semibold-BF64dd8808cf0c5.otf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Pilcrow-medium";
+    src: url(./fonts/pilcrow/Pilcrow-Medium-BF64dd8808de63a.otf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+
+ @font-face {
+    font-family: "Fragment";
+    src: url(./fonts/fragment/FragmentMono-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Silka";
+    src: url(./fonts/silka/silkamono-regular-webfont.ttf);
+    font-style: normal;
+    font-display: swap;
+ }
+
+ @font-face {
+    font-family: "Livemono";
+    src: url(./fonts/livemono/Livemonodemo-6Y5n6.otf);
+    font-style: normal;
+    font-display: swap;
+ }

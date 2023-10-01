@@ -2,19 +2,25 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(237,93,38);
+    background: rgb(223, 75, 16);
     background: linear-gradient(180deg, rgb(211, 63, 4) 0%, rgba(254,254,254,1) 100%);
     margin: 0;
     width: 100%;
     height: auto;
+    padding-bottom: 20px;
+    padding-top: 70px;
+    
+}
+
+.homeWrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 70px;
     gap: 20px;
+    padding-top: 25px;
 }
 
 .personalPhoto {
@@ -55,7 +61,8 @@
     color: #ffffff;
     font-weight: bolder;
     border: 2px solid #fcfdff;
-    border-radius: var(--border-radius);
+    
+    
 }
 
 .firstHomeBox {
@@ -68,7 +75,6 @@
     padding: 10px 0;
     border: 2px solid black;
     background-color: black;
-    /* background-color: rgb(4, 40, 94); */
     color: white;
     position: relative;
     bottom: 30px;
@@ -82,8 +88,8 @@
 
 .skillsListing {
     width: 90%;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
     padding: 5px 0;
 }
 
@@ -91,7 +97,7 @@
     margin: 0;
     width: 100%;
     text-align: right;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 7px 10px;
     overflow: hidden;
 }
@@ -104,13 +110,15 @@
 .skillsListing button {
     width: auto;
     background: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bolder;
     color: #000000;
     border: 2px solid black;
-    border-radius: var(--border-radius);
     padding: 7px 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     cursor: pointer;
+    color: #1F45FC;
+    border: 2px solid;
 }
 
 /*  think again about button - maybe remove border?  */

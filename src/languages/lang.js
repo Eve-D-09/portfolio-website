@@ -9,6 +9,7 @@ export const prod = {
         WELCOME: "Welcome, my name is EVE",
         I_AM: "I am FRONT-END DEVELOPER",
         DOWNLOAD_CV: "Download my CV",
+        BUTTON_PROJECTS: "My Projects",
         ABOUT_H2: "About Me",
         ABOUT_TEXT_P1: `Having worked as a marketing projects manager in the past, I developed strong 
         collaboration and communication skills. I have patience to dedicate hours to 
@@ -25,7 +26,9 @@ export const prod = {
         React.js, Redux Toolkit, Node.js and SQL. I'm exited to contribute my diverse background 
         to collaborative projects.`,
         PROJECTS_H2: "My Projects",
-        CONTACT_H2: "Ready to contact with me? ",
+        CONTACT_H2_LINE1: "Ready to",
+        CONTACT_H2_LINE2: "Contact",
+        CONTACT_H2_LINE3: "With me?",
         FORM_LABEL_NAME: "Name *",
         FORM_LABEL_SURNAME: "Surname *",
         FORM_LABEL_EMAIL: "Email *",
@@ -39,8 +42,9 @@ export const prod = {
         PROJECTS: "Mes projets",
         CONTACT: "Mes coordonnées",
         WELCOME: "Bienvenue, je m'apelle EVA",
-        I_AM: "Je suis DÉVELOPPEUSE INTÉGRATEUR WEB ",
+        I_AM: "Je suis DÉVELOPPEUSE INTÉGRATEUR Web ",
         DOWNLOAD_CV: "Télécharger mon CV",
+        BUTTON_PROJECTS: "Mes Projets",
         ABOUT_H2: "À propos de moi",
         ABOUT_TEXT_P1: `Ayant travaillé comme chef de projets marketing par le passé, j'ai développé de solides
         compétences de collaboration et de communication. J'ai la patience de consacrer des heures à
@@ -57,7 +61,9 @@ export const prod = {
         React.js, Redux Toolkit, Node.js et SQL. Je suis ravi de contribuer à mon expérience diversifiée
         à des projets collaboratifs.`,
         PROJECTS_H2: "Mes projets",
-        CONTACT_H2: "Si vous êtes prêt à me contacter? ",
+        CONTACT_H2_LINE1: "Si vous êtes",
+        CONTACT_H2_LINE2: "prêt à me",
+        CONTACT_H2_LINE3: "contacter?",
         FORM_LABEL_NAME: "Votre Prénom *",
         FORM_LABEL_SURNAME: "votre Nom *",
         FORM_LABEL_EMAIL: "Votre e-mail *",

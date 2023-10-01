@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <div className="headerContainer">
       <div className="firstBox">
-        <h1>Eve D.</h1>
+        <h1>Ieva <span style={{ color: "#1F45FC"}}>Dirmiene</span></h1>
       </div>
       <div className="secondBox">
         <Languages setLanguage={props.setLanguage} language={props.language} />
@@ -17,3 +17,6 @@ const Header = (props) => {
 };
 
 export default Header;
+
+
+// lime green #32CD32

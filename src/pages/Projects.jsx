@@ -5,10 +5,10 @@ import { prod } from "../languages/lang.js";
 import { motion } from "framer-motion";
 import { animateContainer, animateItem } from "../animate.js";
 import { useInView } from "framer-motion";
-import MarsProject from "../img/images/mars-project.jpg";
-import MusicProject from "../img/images/music-project.jpg";
-import ReplicaProject from "../img/images/replica-project.jpg";
-import MinionProject from "../img/images/minion-project.jpg";
+import MarsProject from "../img/images/mars-project-black-white1.jpg";
+import MusicProject from "../img/images/headphones.jpg";
+import ReplicaProject from "../img/images/partytrick-black-white.png";
+import MinionProject from "../img/images/minion-black-white.png";
 
 const Projects = (props) => {
   const navigate = useNavigate();
