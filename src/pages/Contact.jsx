@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { prod } from "../languages/lang.js";
 import Footer from "../components/Footer.jsx";
 import Form from "../components/Form.jsx";
 import SocialMedia from "../components/SocialMedia.jsx";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Contact = (props) => {
   const [result, setResult] = useState("");
+
+  const ref= useRef();
+  const isInView = useInView(ref, { once: true });
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -39,17 +42,23 @@ const Contact = (props) => {
       className="contactContainer" >
       <div className="contactWrapper">
         <div className="contactHeading">
-          <div className="headingFirst">
+          <div ref={ref} className="headingFirst">
              <h2>{prod[props.language].CONTACT_H2_LINE1}</h2>
-             <div></div>
+             <div style={{ transform: isInView ? "none" : "translateX(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
           </div>
-          <div className="headingSecond">
-             <div></div>
+          <div ref={ref} className="headingSecond">
+             <div style={{ transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
              <h2>{prod[props.language].CONTACT_H2_LINE2}</h2>
           </div>
-          <div className="headingThird">
+          <div ref={ref} className="headingThird">
              <h2>{prod[props.language].CONTACT_H2_LINE3}</h2>
-             <div></div>
+             <div style={{ transform: isInView ? "none" : "translateX(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
           </div>
           
         </div>

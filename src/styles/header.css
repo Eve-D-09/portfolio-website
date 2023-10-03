@@ -2,8 +2,8 @@
     position: relative;
     z-index: 20;
     display: flex;
-    /*  bring back 100%?  */
-    width: 100vw;
+    /*  bring back 100vw?  */
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: black;
@@ -51,7 +51,7 @@ option {
 
 .navigation {
     margin: 0 auto;
-    display: flex;
+    display: flex; 
 }
 
 .navigation button {
@@ -84,22 +84,46 @@ nav ul {
     cursor: grab;
 }
 
-.navigation nav {
+/*  was .navigation nav */
+ nav {
     margin: 0 auto;
     position: absolute;
     top: 0;
     right: 0;
-    width: 90vw;
+    /* width: 90vw; */
+    width: 100%;
     height: 300px;
     background-color: rgb(0, 0, 0);
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
+    /* ---------------------------- */
+    transition: all 0.5s linear;
+    transform: translateX(0px);
+   
 }
 
+/* .openNavigation {
+    transform: translateX(0%);
+    transition: all 0.5s linear;
+} */
+
+.closeNavigation {
+    transform: translateX(350px);
+    transition: all 0.5s linear;
+}
+
+
+/* toggling dark/light theme modes */
+/* https://blog.openreplay.com/mastering-css-transitions-with-react-18/#:~:text=The%20transition%20property%20specifies%20to,width%20in%20its%20transition%2Dproperty%20. */
+/* -------------------------------------- */
+
+/*  it is button who closes nav*/
 .closeNav {
     width: 90%;
     margin: 0 auto;
     align-items: flex-end;
+    
 }
 
 .closeNav > button {

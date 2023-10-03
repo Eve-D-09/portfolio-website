@@ -25,7 +25,8 @@
 
 .contactHeading h2 {
     margin: 0;
-    font-size: 1.9rem;
+    font-size: 1.9rem; 
+   
 }
 
 .headingFirst, 
@@ -34,12 +35,13 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 10px 0;
 }
 
 .headingFirst div {
-    width: 100px;
+    width: 80px;
     height: 5px;
     background-color: rgb(31, 69, 252);
 }
@@ -112,7 +114,6 @@ form button {
     color: var(--orange-red);
     color: white;
     background-color: var(--orange-red);
-    /* background: transparent; */
 }
 
 .socialMediaContainer {
@@ -138,7 +139,6 @@ form button {
 }
 
 .mediaBox {
-    /* background-color: black; */
     justify-content: flex-start;
     padding: 5px 10px;
 }

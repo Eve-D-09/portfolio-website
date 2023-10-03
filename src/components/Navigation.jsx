@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { prod } from "../languages/lang.js";
 import MenuIcon from "../img/svg/menu-dots-circle-svgrepo-com.svg";
@@ -6,17 +6,41 @@ import MenuIcon from "../img/svg/menu-dots-circle-svgrepo-com.svg";
 
 const Navigation = (props) => {
   const [ isOpen, setIsOpen ] = useState(false);
+
+  const [ width, setWidth ] = useState(window.innerWidth);
+  const breakpoint = 900;
+  const ref = useRef();
+
   const { language } = props;
 
   const closeMenu = () => setIsOpen(false);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+  const outsideClick = useCallback((e) => {
+    if ( ref.current && !ref.current.contains(e.target)) {
+      setIsOpen(false);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("mousedown", outsideClick);
+    return () => {
+        document.addEventListener("mousedown", outsideClick);
+    };
+  });
   
   return (
-    <div className="navigation">
+    <div ref={ref} className="navigation">
       <div >
         <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
       </div>
-      { isOpen  && (
-        <nav >
+      { (isOpen || width > breakpoint) && (
+        <nav className={` nav ${ isOpen ? 'nav' : '.closeNavigation'}`}>
           <div className="closeNav">
              <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
           </div>

@@ -23,12 +23,7 @@ const HomePage = (props) => {
       <div className="homeWrapper">
         <div className="firstHomeBox">
           <div className="homeParagraph">
-            <motion.p
-              animate={{ y: 0 }}
-              initial={{ y: "100%" }}
-              transition={{ delay: 0.75, duration: 0.5 }}>
-              {prod[language].WELCOME}
-            </motion.p>
+            <p> {prod[language].WELCOME} </p>
           </div>
           <div className="homeParagraph">
             <p>{prod[language].I_AM}</p>

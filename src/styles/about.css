@@ -6,17 +6,23 @@
     background-image: url(../img/images/cyber.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 0 auto;
     width: 100%;
     height: auto;
+    padding-bottom: 20px;
+    padding-top: 70px;
+    
+}
+
+.aboutWrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 70px;
     gap: 30px;
+    padding-top: 25px;
 }
 
 
@@ -34,6 +40,8 @@
 .aboutBox h2 {
     margin: 0;
     text-align: center;
+    font-size: 2.2rem;
+    color: rgb(31, 69, 252);
 }
 
 .aboutContainer .furtherLink {

@@ -62,3 +62,29 @@ export const item = {
 
 # <motion.ul variants={container} initial="hidden" animate="show">
 # <motion.li variants={item}>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+# animate project item: scaling from 0.5 to visibility and opacity 1
+<motion.div initial={{ opacity: 0, scale: 0.65 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.5, ease: [0, 0.71, 0.2, 1.01]}} className="projectItem" >
+
+# animates div with h2 when in view:
+
+<div ref={ref} className="projectsHeading">
+          <h2 style={{ transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }} >
+            {prod[props.language].PROJECTS_H2}
+          </h2>
+        </div>
+
+# animated p tag in homepage:
+
+<motion.p animate={{ y: 0 }}  initial={{ y: "100%" }}  transition={{ delay: 0.75, duration: 0.5 }}>
+         {prod[language].WELCOME} </motion.p>
+
+
+animate={{ y: 0 }}
+  initial={{ y: "100%" }}
+  transition={{ delay: 0.75, duration: 0.5 }}            

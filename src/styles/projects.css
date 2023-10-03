@@ -6,10 +6,6 @@
   width: 100vw;
   height: auto;
   margin: 0 auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   padding-bottom: 20px;
   padding-top: 70px;
   gap: 20px;
@@ -21,16 +17,26 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-top: 25px;
 }
 
-.projectsContainer h2 {
-  font-size: 1.5rem;
-  margin: 0;
+.projectsHeading {
+   width: 90%;
+   height: auto;
 }
+
+.projectsHeading h2 {
+  /*  font was 1.8rem */
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 5px 0;
+  color: rgb(31, 69, 252);
+}
+
+
 
 .projectItem {
   border: 2px solid var(--orange-red);
-  /* border-radius: var(--border-radius); */
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -38,13 +44,16 @@
 
 .projectIntro {
   width: 100%;
-  background-color: var(--orange-red);
-  color: white;
+  /* background-color: var(--orange-red);
+  color: white; */
 }
 
 .projectIntro h3 {
   margin: 0;
-  padding: 5px 10px;
+  padding: 10px;
+  background-color: var(--orange-red);
+  color: white;
+  font-size: 1.5rem;
 }
 
 .projectImage {

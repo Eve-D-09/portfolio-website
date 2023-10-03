@@ -61,7 +61,7 @@ export const prod = {
         React.js, Redux Toolkit, Node.js et SQL. Je suis ravi de contribuer à mon expérience diversifiée
         à des projets collaboratifs.`,
         PROJECTS_H2: "Mes projets",
-        CONTACT_H2_LINE1: "Si vous êtes",
+        CONTACT_H2_LINE1: "Vous êtes",
         CONTACT_H2_LINE2: "prêt à me",
         CONTACT_H2_LINE3: "contacter?",
         FORM_LABEL_NAME: "Votre Prénom *",
