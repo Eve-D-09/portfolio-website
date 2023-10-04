@@ -8,7 +8,7 @@ import { motion, useInView } from "framer-motion";
 const Contact = (props) => {
   const [result, setResult] = useState("");
 
-  const ref= useRef();
+  const ref = useRef();
   const isInView = useInView(ref, { once: true });
 
   const onSubmit = async (event) => {
@@ -39,37 +39,55 @@ const Contact = (props) => {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
-      className="contactContainer" >
+      className="contactContainer"
+    >
       <div className="contactWrapper">
         <div className="contactHeading">
           <div ref={ref} className="headingFirst">
-             <h2>{prod[props.language].CONTACT_H2_LINE1}</h2>
-             <div style={{ transform: isInView ? "none" : "translateX(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
+            <h2>{prod[props.language].CONTACT_H2_LINE1}</h2>
+            <div
+              style={{
+                transform: isInView ? "none" : "translateX(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+            ></div>
           </div>
           <div ref={ref} className="headingSecond">
-             <div style={{ transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
-             <h2>{prod[props.language].CONTACT_H2_LINE2}</h2>
+            <div
+              style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+            ></div>
+            <h2>{prod[props.language].CONTACT_H2_LINE2}</h2>
           </div>
           <div ref={ref} className="headingThird">
-             <h2>{prod[props.language].CONTACT_H2_LINE3}</h2>
-             <div style={{ transform: isInView ? "none" : "translateX(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s", }}></div>
+            <h2>{prod[props.language].CONTACT_H2_LINE3}</h2>
+            <div
+              style={{
+                transform: isInView ? "none" : "translateX(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+            ></div>
           </div>
-          
         </div>
         <div className="formContainer">
-          <Form onSubmit={onSubmit} setLanguage={props.setLanguage}  language={props.language}/>
+          <Form
+            onSubmit={onSubmit}
+            setLanguage={props.setLanguage}
+            language={props.language}
+          />
         </div>
-        <div className="socialMediaContainer">
-           <SocialMedia />
-        </div>
-        <div className="footerContainer">
-          <Footer setLanguage={props.setLanguage} language={props.language} />
+        <div className="footerBox">
+          <div className="socialMediaContainer">
+            <SocialMedia />
+          </div>
+          <div className="footerContainer">
+            <Footer setLanguage={props.setLanguage} language={props.language} />
+          </div>
         </div>
       </div>
     </motion.main>

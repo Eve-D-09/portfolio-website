@@ -40,10 +40,10 @@ const Navigation = (props) => {
         <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
       </div>
       { (isOpen || width > breakpoint) && (
-        <nav className={` nav ${ isOpen ? 'nav' : '.closeNavigation'}`}>
-          <div className="closeNav">
+        <nav className={`${ isOpen ? '.closeNavigation' : 'nav'}`}>
+          {/* <div className="closeNav">
              <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
-          </div>
+          </div> */}
         <ul >
           <Link to={"/"} className="navLinks" onClick={closeMenu}><li>{prod[language].HOME}</li></Link>
           <Link to={"/about"} className="navLinks" onClick={closeMenu}><li>{prod[language].ABOUT} </li>  </Link>

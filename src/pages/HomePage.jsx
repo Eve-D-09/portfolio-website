@@ -26,7 +26,7 @@ const HomePage = (props) => {
             <p> {prod[language].WELCOME} </p>
           </div>
           <div className="homeParagraph">
-            <p>{prod[language].I_AM}</p>
+            <p>{prod[language].CALL_ME}</p>
           </div>
           <div className="homeParagraph">
             <a href="/example.pdf" rel="noreferrer">

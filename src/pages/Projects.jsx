@@ -14,12 +14,6 @@ const Projects = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  //  activating animation with hooks:
-  // https://codesandbox.io/s/framer-motion-useinview-cgt5kc?from-embed=&file=/src/App.js:399-446
-
-  // -------------------------------------------------------
-  // scaling div https://codesandbox.io/s/framer-motion-transition-prop-j9m7d2?from-embed=&file=/src/App.tsx
-
   return (
     <motion.div
       // initial={{ opacity: 0 }}
@@ -28,8 +22,7 @@ const Projects = (props) => {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
-      className="projectsContainer"
-    >
+      className="projectsContainer">
       <div ref={ref} className="projectsWrapper">
         <div className="projectsHeading">
           <h2>{prod[props.language].PROJECTS_H2}</h2>

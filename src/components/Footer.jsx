@@ -9,7 +9,7 @@ const Footer = (props) => {
         <p>{prod[props.language].FOOTER_P}</p>
       </div>
       <div className="footerSecondBox">
-        <p style={{ color: "#1F45FC"}}> Eve, Copyright&copy; {year}</p>
+        <p> Eve, Copyright&copy; {year}</p>
       </div>
     </>
   );
