@@ -1,329 +1,364 @@
 .contactContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background-color: rgb(14, 15, 15); */
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .contactWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .contactHeading {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contactHeading h2 {
-    margin: 0;
-    font-size: 1.9rem; 
+  margin: 0;
+  font-size: 1.9rem;
 }
 
-.headingFirst, 
-.headingSecond, 
+.headingFirst,
+.headingSecond,
 .headingThird {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .headingFirst div {
-    width: 80px;
-    height: 5px;
-    background-color: rgb(31, 69, 252);
+  width: 80px;
+  height: 5px;
+  background-color: rgb(31, 69, 252);
 }
 
 .headingSecond div {
-    width: 70px;
-    height: 5px;
-    background-color: var(--orange-red);
+  width: 70px;
+  height: 5px;
+  background-color: var(--orange-red);
 }
 
 .headingThird div {
-    width: 60px;
-    height: 5px;
-    background-color: rgb(31, 69, 252);
+  width: 60px;
+  height: 5px;
+  background-color: rgb(31, 69, 252);
 }
 
 .formContainer {
-    width: 100%;
+  width: 100%;
 }
 
 form {
-    width: 90%;
-    /* border: 2px solid var(--orange-red); */
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-   
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 form div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 form label {
-    padding: 5px 10px;
-    color: var(--orange-red);
+  padding: 5px 10px;
+  color: var(--orange-red);
 }
 
 form input {
-    height: 30px;
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid var(--orange-red);
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--orange-red);
 }
 
 form textarea {
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid var(--orange-red);
-    height: 100px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--orange-red);
+  height: 100px;
 }
 
 .submitButton {
-    height: auto;
-    padding: 5px 0;
-    display: inline-block;
-    text-align: center;
+  height: auto;
+  padding: 5px 0;
+  display: inline-block;
+  text-align: center;
 }
 
 form button {
-    width: 130px;
-    height: 35px;
-    border: 2px solid var(--orange-red);
-    padding: 5px 10px;
-    color: var(--orange-red);
-    color: white;
-    background-color: var(--orange-red);
+  width: 130px;
+  height: 35px;
+  border: 2px solid var(--orange-red);
+  padding: 5px 10px;
+  color: var(--orange-red);
+  color: white;
+  background-color: var(--orange-red);
 }
 
-/* 04/10/2023 */
+
 .footerBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--orange-red);
-    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--orange-red);
+  margin-top: 50px;
 }
 
 .socialMediaContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 20px 0;
-    /* background-color: var(--orange-red); */
-    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .socialMediaContainer div {
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .socialMediaContainer p {
-    margin: 0;
-    padding: 5px 10px;
+  margin: 0;
+  padding: 5px 10px;
 }
 
 .mediaBox {
-    justify-content: flex-start;
-    padding: 5px 10px;
+  justify-content: flex-start;
+  padding: 5px 10px;
 }
 
 .mediaBox img {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .footerContainer {
-    width: 100%;
-    border-top: 2px dotted white;
-    /* background-color: var(--orange-red); */
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
+  width: 100%;
+  border-top: 2px dotted white;
+  background-color: var(--orange-red);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
 .footerContainer div {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .footerContainer p {
-    margin: 0;
-    padding: 10px 0;
-    width: 100%;
-    color: white;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
 }
 
-/* .footerContainer p:nth-of-type(1) {
-    color: var(--orange-red);
-} */
-
 .footerSecondBox p {
-    text-align: right;
-    /* color: #1F45FC; */
+  text-align: right;
 }
 
 /* ------------------------tablets---------------- */
 
 @media (min-width: 600px) {
-   
-    .contactHeading h2 {
-        font-size: 1.9rem;
-        padding: 5px 0;
-        /* color: white; */
-    }
+  .contactHeading h2 {
+    font-size: 1.9rem;
+    padding: 5px 0;
+  }
 
-    .headingFirst div {
-        width: 180px;
-    }
+  .headingFirst div {
+    width: 180px;
+  }
 
-    .headingSecond div {
-        width: 160px;
-    }
+  .headingSecond div {
+    width: 160px;
+  }
 
-    .headingThird div {
-        width: 200px;
-    }
+  .headingThird div {
+    width: 200px;
+  }
 
-    form {
-        width: 60%;
-        border: 2px solid var(--orange-red);
-    }
+  form {
+    width: 60%;
+    border: 2px solid var(--orange-red);
+  }
 
-    form button {
-        width: 150px;
-        height: 40px;
-    }
+  form button {
+    width: 150px;
+    height: 40px;
+  }
 
-    form input {
-       /* color: white; */
-       padding: 7px 10px;
-    }
+  form input {
+    padding: 7px 10px;
+  }
 
-    form textarea {
-        height: 180px;
-        /* color: white; */
-        line-height: 1.2;
-        padding: 7px 10px;
-    }
+  form textarea {
+    height: 180px;
+    line-height: 1.2;
+    padding: 7px 10px;
+  }
 
-    .footerContainer {
-        flex-direction: row;
-        padding: 20px;
-    }
+  .footerContainer {
+    flex-direction: row;
+    padding: 20px;
+  }
 }
 
 @media (min-width: 800px) {
-    form {
-        width: 450px;
-    }
+  form {
+    width: 450px;
+  }
 }
-
 
 @media (min-width: 900px) {
-    .contactWrapper {
-        flex-direction: row;
-        width: 95%;
-        margin: 0 auto;
-        gap: 0;
-    }
+  .contactWrapper {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    gap: 0;
+  }
 
-    .contactHeading, 
-    .formContainer {
-        flex-basis: 50%;
-        width: 100%;
-        width: 450px;
-        height: 600px;
-    }
+  .contactHeading,
+  .formContainer {
+    flex-basis: 50%;
+    /* width: 100%; */
+    /* width: 450px; */
+    height: 600px;
+  }
 
-    .contactHeading {
-       display: flex;
-       flex-direction: column;
-       /* background-color: var(--orange-red); */
-       background-image: url(../img/images/abstract-orange.jpg);
-       background-size: contain;
-       background-repeat: no-repeat;
-       color: white;
-    }
+  .contactHeading {
+    display: grid;
+    place-items: center;
+    background-image: url(../img/images/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
 
-    .contactHeading h2 {
-        color: black;
-    }
+  .contactHeading h2 {
+    color: black;
+  }
 
-    .headingFirst, 
-    .headingSecond,
-    .headingThird {
-        height: 30%;
-    }
+  .headingFirst,
+  .headingSecond,
+  .headingThird {
+    height: 90px;
+  }
 
-    .headingFirst div {
-        width: 70px;
-    }
+  .headingFirst div {
+    width: 70px;
+  }
 
-    .headingSecond div {
-        width: 80px;
-    }
+  .headingSecond div {
+    width: 80px;
+  }
 
-    .headingThird div {
-        width: 90px;
-    }
+  .headingThird div {
+    width: 90px;
+  }
 
-    .headingSecond div {
-        background-color: rgb(32, 72, 184);
-    }
+  .headingSecond div {
+    background-color: rgb(32, 72, 184);
+  }
 
-    .socialMediaContainer {
-        flex-direction: row;
-        width: 95%;
-        margin: 0 auto;
-        justify-content: space-between;
-        gap: 10px;
-    }
+  .socialMediaContainer {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+  }
 
-    .socialMediaContainer p {
-        color: white;
-    }
+  .socialMediaContainer p {
+    color: white;
+  }
 
-    
+  .mediaBox {
+    justify-content: flex-end;
+    flex-basis: 30%;
+  }
 
-    .mediaBox {
-        justify-content: flex-end;
-        flex-basis: 30%;
-    }
-
-    .mediaBox img {
-        margin: 0;
-        padding: 0 0 0 10px;
-    }
-
-
-
-
+  .mediaBox img {
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
 }
 
+@media (min-width: 950px) {
+    .contactWrapper {
+        width: 90%;
+    }
+}
 
+@media (min-width: 1050px) {
+    .contactWrapper {
+        width: 900px;
+    }
+}
 
+@media (min-width: 1100px) {
+  .contactWrapper {
+    width: 900px;
+  }
 
+  .contactHeading {
+    height: 600px;
+    display: grid;
+    place-content: center;
+  }
+
+  .contactHeading, 
+  .formContainer {
+    width: 500px;
+  }
+
+  .headingFirst,
+  .headingSecond,
+  .headingThird {
+    height: 70px;
+  }
+
+  .socialMediaContainer {
+    width: 900px;
+  }
+
+  .mediaBox {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1300px) {
+   .contactHeading h2 {
+    font-size: 2.2rem;
+   }
+
+   .headingFirst div {
+    width: 110px;
+    height: 8px;
+   }
+   .headingSecond div {
+    height: 8px;
+    width: 120px;
+   }
+   .headingThird div {
+    height: 8px;
+    width: 120px;
+   }
+}

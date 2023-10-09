@@ -46,10 +46,9 @@
 /*  maybe this will work when it will be some padding or margin */
 .homeParagraph {
   margin: 0;
-  /* padding: 10px 20px; */
   /* overflow: hidden; */
   width: 100%;
-  padding: 10px 10px;
+  padding: 7px 10px;
 }
 
 .homeParagraph p {
@@ -57,6 +56,10 @@
   width: 100%;
   font-size: 1rem;
   opacity: unset;
+}
+
+.homeParagraph:last-of-type {
+  margin: 7px 0;
 }
 
 .homeParagraph a {
@@ -71,7 +74,6 @@
 .profession {
   width: 100%;
   padding: 10px 0;
-  border: 2px solid black;
   background-color: black;
   color: white;
   position: relative;
@@ -105,6 +107,7 @@
   text-align: right;
   padding: 7px 10px;
 }
+
 .skillsListing button {
   width: auto;
   background: none;
@@ -113,7 +116,6 @@
   color: #000000;
   border: 2px solid black;
   padding: 7px 10px;
-  /* text-transform: uppercase; */
   cursor: pointer;
   color: #1f45fc;
   border: 2px solid;
@@ -125,7 +127,6 @@
   /* border: 2px solid rgb(237,93,38); */
   border: none;
   cursor: pointer;
-  /* border-radius: var(--border-radius); */
 }
 
 /* -----------------tablets----------------------------- */
@@ -155,14 +156,6 @@
     width: 400px;
     height: 400px;
   }
-
-  /* .firstHomeBox {
-    border-right: 3px solid black;;
-   }
-
-   .skillsListing {
-    border-left: 3px solid black;
-   } */
 }
 
 @media (min-width: 700px) {
@@ -181,49 +174,115 @@
 
 @media (min-width: 900px) {
   .homeWrapper {
-    /* gap: 0; */
-    /* padding-top: 0; */
+    gap: 40px;
     flex-wrap: nowrap;
   }
 
   .skillsListing,
   .firstHomeBox {
-     width: 50%;
-     flex-basis: 50%;
-     order: -1;
+    width: 50%;
+    flex-basis: 50%;
+    order: -1;
   }
 
-  /* .skillsListing {
-    order: -1;
-    flex-basis: 50%;
-    display: inline-block;
-    border: none;
-    position: relative;
-    top: 20%;
-    left: 100px;
-  } */
-
-   .firstHomeBox {
-    /* display: inline-block; */
-    /* margin-right: 350px; */
-    /* margin-bottom: 0; */
+  .firstHomeBox {
     margin: unset;
     margin-left: 50px;
     align-self: flex-start;
   }
 
-   .skillsListing {
-    /* display: inline-block; */
-    /* margin-left: 350px; */
+  .skillsListing {
     position: absolute;
     left: 45%;
     top: 75px;
     border-bottom: none;
     border-top: 3px solid black;
-  } 
+  }
+
+  .personalPhoto {
+    width: 450px;
+  }
+
+  .personalPhoto img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 45%;
+    flex-basis: 45%;
+  }
+
+  .firstHomeBox {
+    margin-left: 120px;
+  }
+}
 
 
+@media (min-width: 1400px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 630px;
+    flex-basis: 40%;
+  }
+
+  .firstHomeBox {
+    position: relative;
+    left: 3%;
+  }
+
+  .profession p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 600px;
+    flex-basis: 40%;
+  }
+
+  .firstHomeBox {
+    position: relative;
+    left: 6%;
+  }
+  
+}
+
+@media (min-width: 1600px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 600px;
+    flex-basis: 35%;
+  }
+  .firstHomeBox {
+    position: relative;
+    left: 9%;
+  }
+}
 
 
+@media (min-width: 1700px) {
+  .firstHomeBox {
+    position: relative;
+    left: 11%;
+  }
+}
 
+@media (min-width: 1800px) {
+  .firstHomeBox {
+    position: relative;
+    left: 13%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .firstHomeBox {
+    position: relative;
+    left: 15%;
+  }
 }

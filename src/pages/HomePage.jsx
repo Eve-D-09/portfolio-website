@@ -30,6 +30,9 @@ const HomePage = (props) => {
             <p>{prod[language].CALL_ME}</p>
           </div>
           <div className="homeParagraph">
+            <p>And this is my personal porfolio website</p>
+          </div>
+          <div className="homeParagraph">
             <a href="/example.pdf" rel="noreferrer">
               {prod[language].DOWNLOAD_CV}
             </a>

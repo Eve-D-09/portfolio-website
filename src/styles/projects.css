@@ -44,8 +44,6 @@
 
 .projectIntro {
   width: 100%;
-  /* background-color: var(--orange-red);
-  color: white; */
 }
 
 .projectIntro h3 {
@@ -162,4 +160,42 @@
   .projectsHeading {
     margin-bottom: 15px;
   }
+
+  .furtherLink {
+    flex-basis: 100%;
+    display:flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .furtherLink button {
+    width: 50px;
+    height: auto;
+    margin: auto;
+  }
+
+
+}
+
+@media (min-width: 1100px){
+   .projectsWrapper {
+    width: 80%;
+   }
+}
+
+@media (min-width: 1300px) {
+  .projectImage img {
+    width: 500px;
+    height: 300px;
+    
+  }
+}
+
+
+@media (min-width: 1400px){
+  .projectsWrapper {
+   width: 1100px;
+  }
+
+ 
 }
