@@ -73,6 +73,7 @@ const Contact = (props) => {
               }}
             ></div>
           </div>
+          
         </div>
         <div className="formContainer">
           <Form
@@ -81,6 +82,15 @@ const Contact = (props) => {
             language={props.language}
           />
         </div>
+        {/* <div className="footerBox">
+          <div className="socialMediaContainer">
+            <SocialMedia />
+          </div>
+          <div className="footerContainer">
+            <Footer setLanguage={props.setLanguage} language={props.language} />
+          </div>
+        </div> */}
+      </div>
         <div className="footerBox">
           <div className="socialMediaContainer">
             <SocialMedia />
@@ -89,7 +99,6 @@ const Contact = (props) => {
             <Footer setLanguage={props.setLanguage} language={props.language} />
           </div>
         </div>
-      </div>
     </motion.main>
   );
 };

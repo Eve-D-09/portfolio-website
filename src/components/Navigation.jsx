@@ -45,7 +45,7 @@ const Navigation = (props) => {
              <button onClick={() => setIsOpen(!isOpen)}><img src={MenuIcon} alt="menu-icon" /></button>
           </div> */}
         <ul >
-          <Link to={"/"} className="navLinks" onClick={closeMenu}><li>{prod[language].HOME}</li></Link>
+          <Link to={"/"} className="navLinks" onClick={closeMenu}><li className="homeLink">{prod[language].HOME}</li></Link>
           <Link to={"/about"} className="navLinks" onClick={closeMenu}><li>{prod[language].ABOUT} </li>  </Link>
           <Link to={"/projects"} className="navLinks" onClick={closeMenu}><li>{prod[language].PROJECTS} </li> </Link>
           <Link to={"/contact"} className="navLinks" onClick={closeMenu}><li>{prod[language].CONTACT} </li></Link>

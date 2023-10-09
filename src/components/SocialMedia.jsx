@@ -16,8 +16,8 @@ const SocialMedia = () => {
         <p>Belgium, Brussels</p>
       </div>
       <div className="mediaBox">
-        <img src={GithubIcon} alt="github-icon" />
-        <img src={LinkedinIcon} alt="github-icon" />
+        <a href=""><img src={GithubIcon} alt="github-icon" /></a>
+        <a href="https://www.linkedin.com/in/ieva-dirmiene-643b38269/"><img src={LinkedinIcon} alt="github-icon" /></a>
       </div>
     </>
   );

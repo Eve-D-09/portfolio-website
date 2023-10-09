@@ -95,3 +95,71 @@
   padding: 5px 10px;
   /* overflow: hidden; */
 }
+
+/* --------------------tablets-------------------- */
+
+@media (min-width: 600px) {
+  .projectsWrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .projectItem {
+    width: 100%;
+  }
+
+  .projectsHeading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .projectLinks {
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 15px 10px;
+  }
+  .projectIntro h3 {
+    padding: 15px 10px;
+  }
+
+  .projectItem p {
+    padding: 15px 10px;
+  }
+
+}
+
+
+@media (min-width: 700px) {
+    .projectsWrapper {
+      width: 65%;
+    }
+}
+
+@media (min-width: 800px) {
+  .projectsWrapper {
+    width: 60%;
+  }
+
+  .projectImage img {
+    width: 480px;
+    height: 300px;
+    
+  }
+}
+
+@media (min-width: 900px) {
+  .projectsWrapper {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .projectItem {
+    flex-basis: 45%;
+  }
+
+  .projectsHeading {
+    margin-bottom: 15px;
+  }
+}

@@ -89,8 +89,8 @@ const Projects = (props) => {
           <div className="projectIntro">
             <h3>Minion small SVG project</h3>
             <p>
-              This small task was to design some image by playing with SVG
-              forms.
+              This  task was to design image by playing with SVG
+              forms. Mobile only.
             </p>
           </div>
           <div className="projectImage">

@@ -1,130 +1,229 @@
 .homeContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(223, 75, 16);
-    background: linear-gradient(180deg, rgb(211, 63, 4) 0%, rgba(254,254,254,1) 100%);
-    margin: 0;
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px;
-    padding-top: 70px;
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(223, 75, 16);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 63, 4) 0%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 70px;
 }
 
 .homeWrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
 }
 
 .personalPhoto {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .personalPhoto img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
-
-
 .firstHomeBox {
-    color: black;
+  color: black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  width: 90%;
 }
 
 /*  maybe this will work when it will be some padding or margin */
 .homeParagraph {
-    margin: 0;
-    padding: 10px 20px;
-    overflow: hidden;
-    width: 100%;
+  margin: 0;
+  /* padding: 10px 20px; */
+  /* overflow: hidden; */
+  width: 100%;
+  padding: 10px 10px;
 }
 
 .homeParagraph p {
-    margin: 0;
-    width: 100%;
-    font-size: 1rem;
-    opacity: unset;
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  opacity: unset;
 }
 
 .homeParagraph a {
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 7px 10px;
-    color: #ffffff;
-    font-weight: bolder;
-    border: 2px solid #fcfdff;
-    
-    
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 7px 10px;
+  color: #ffffff;
+  font-weight: bolder;
+  border: 2px solid #fcfdff;
 }
 
-.firstHomeBox {
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    width: 90%;
-}
 .profession {
-    width: 100%;
-    padding: 10px 0;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    position: relative;
-    bottom: 30px;
+  width: 100%;
+  padding: 10px 0;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 30px;
 }
 
 .profession p {
-    font-size: 1.2rem;
-    margin: 0;
-    text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
 }
 
 .skillsListing {
-    width: 90%;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 5px 0;
+  width: 90%;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 5px 0;
 }
 
 .skillsListing p {
-    margin: 0;
-    width: 100%;
-    text-align: right;
-    font-size: 1rem;
-    padding: 7px 10px;
-    overflow: hidden;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 1rem;
+  padding: 7px 10px;
+  overflow: hidden;
 }
 .skillsListing div {
-    width: 100%;
-    display: inline-block;
-    text-align: right;
-    padding: 7px 10px;
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  padding: 7px 10px;
 }
 .skillsListing button {
-    width: auto;
-    background: none;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #000000;
-    border: 2px solid black;
-    padding: 7px 10px;
-    /* text-transform: uppercase; */
-    cursor: pointer;
-    color: #1F45FC;
-    border: 2px solid;
+  width: auto;
+  background: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #000000;
+  border: 2px solid black;
+  padding: 7px 10px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  color: #1f45fc;
+  border: 2px solid;
 }
 
 /*  think again about button - maybe remove border?  */
 .furtherLink button {
-    background: none;
-    border: 2px solid rgb(237,93,38);
-    cursor: pointer;
-    border-radius: var(--border-radius);
+  background: none;
+  /* border: 2px solid rgb(237,93,38); */
+  border: none;
+  cursor: pointer;
+  /* border-radius: var(--border-radius); */
+}
+
+/* -----------------tablets----------------------------- */
+
+@media (min-width: 600px) {
+  .homeWrapper {
+    gap: 25px;
+  }
+
+  .profession p {
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+  .firstHomeBox,
+  .skillsListing {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .personalPhoto {
+    width: 400px;
+    height: 400px;
+  }
+
+  .personalPhoto img {
+    width: 400px;
+    height: 400px;
+  }
+
+  /* .firstHomeBox {
+    border-right: 3px solid black;;
+   }
+
+   .skillsListing {
+    border-left: 3px solid black;
+   } */
+}
+
+@media (min-width: 700px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  .firstHomeBox,
+  .skillsListing {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .homeWrapper {
+    /* gap: 0; */
+    /* padding-top: 0; */
+    flex-wrap: nowrap;
+  }
+
+  .skillsListing,
+  .firstHomeBox {
+     width: 50%;
+     flex-basis: 50%;
+     order: -1;
+  }
+
+  /* .skillsListing {
+    order: -1;
+    flex-basis: 50%;
+    display: inline-block;
+    border: none;
+    position: relative;
+    top: 20%;
+    left: 100px;
+  } */
+
+   .firstHomeBox {
+    /* display: inline-block; */
+    /* margin-right: 350px; */
+    /* margin-bottom: 0; */
+    margin: unset;
+    margin-left: 50px;
+    align-self: flex-start;
+  }
+
+   .skillsListing {
+    /* display: inline-block; */
+    /* margin-left: 350px; */
+    position: absolute;
+    left: 45%;
+    top: 75px;
+    border-bottom: none;
+    border-top: 3px solid black;
+  } 
+
+
+
+
+
 }

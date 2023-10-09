@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { prod } from "../languages/lang.js";
 import { motion } from "framer-motion";
 import ArrowDown from "../img/svg/chevron-down-svgrepo-com.svg";
-import Photo from "../img/images/portrait-photo.jpeg";
+// import Photo from "../img/images/portrait-photo.jpeg";
+import ProfilePhoto from "../img/images/profile-photo3.jpg";
 
 const HomePage = (props) => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const HomePage = (props) => {
           </div>
         </div>
         <div className="personalPhoto">
-          <img src={Photo} alt="personal-photo" />
+          <img src={ProfilePhoto} alt="personal-photo" />
         </div>
         <div className="profession">
           <p>{prod[language].I_AM}</p>
